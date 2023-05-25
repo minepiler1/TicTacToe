@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    margin: 0%;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper > div:nth-child(2){
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wrapper > div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset button{
+    height: 30px;
+    width: auto;
+    align-self: center;
+
+}
+
+button{
+    width: 100px;
+    height: 100px;
+}
