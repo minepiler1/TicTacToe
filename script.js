@@ -32,7 +32,6 @@ buttons.forEach(function(button){
     if (turn.innerHTML === `Turn: X`){
         button.innerHTML = `X`
         turn.innerHTML = `Turn: O`
-        button.style.backgroundcolor = "blue"
         button.disabled = true
     }
     
@@ -41,7 +40,7 @@ buttons.forEach(function(button){
       turn.innerHTML = `Turn: X`
       button.disabled = true
 
-    if( button1.innerHTML === "O" && button3.innerHTML === "O" && button3.innerHTML === "O"){
+    if( button1.innerHTML === "O" && button2.innerHTML === "O" && button3.innerHTML === "O"){
         countBlue = countBlue + 1 
 
         blueScore.innerHTML =  `Blue score: ${countBlue}`
@@ -49,8 +48,9 @@ buttons.forEach(function(button){
           button.disabled = true
       })
 
-    } if ( button1.innerHTML === "X" && button3.innerHTML === "X" && button3.innerHTML === "X"){
-      countRed = countRed + 1 
+    } else if ( button1.innerHTML === "X" && button2.innerHTML === "X" && button3.innerHTML === "X"){
+      countRed = countRed + 1
+
       redScore.innerHTML =  `Red score: ${countRed}`
         buttons.forEach(function(button){
         button.disabled = true
