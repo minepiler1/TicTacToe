@@ -8,6 +8,23 @@ body{
     justify-content: center;
 }
 
+p, h1{
+    color: white;
+}
+
+button{
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.reset button{
+    border: none;
+}
+
 .wrapper > div:nth-child(2){
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -28,18 +45,17 @@ body{
     height: 30px;
     width: auto;
     align-self: center;
-
-}
-p{
-    color: white;
 }
 
-button{
-    border: 1px solid white;
-    color: white;
-    font-size: 20px;
-    width: 200px;
-    height: 200px;
-    background-color: black;
+.buttons :nth-child(n+1){
+    border-top: none;
+    border-left: none;
 }
 
+.buttons :nth-child(3n){
+    border-right: none;
+}
+
+.buttons :nth-child(7), .buttons :nth-child(8), .buttons :nth-child(9){
+    border-bottom: none;
+}
